@@ -1,14 +1,21 @@
-th, td{
-    border: 1px solid black;
-    text-align: center;
-    padding: 10px;
-}
-
-.parcours{
+/* Tables / parcours */
+.parcours {
     justify-items: center;
 }
 
-th{
-    background-color: rgb(209, 244, 255);
-    color: rgb(34, 0, 255);
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px ;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+th {
+    background-color: rgba(145, 138, 138, 0.8);
+    color: rgb(0, 0, 0);
+}
+
+table{
+    border-collapse: collapse;
 }

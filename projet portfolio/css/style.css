@@ -1,39 +1,121 @@
-header{
-    text-align: center;
-    background-color: rgb(156, 37, 140);
-    color: white;
+/* Reset / page base */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-nav a{
-    margin: 10px;
-    color: white;
+body {
+    color: #ffffff;
+    font-family: Book Antiqua, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #c9cacc;
+}
+
+/* Typography */
+h2 {
+    color: #000000;
+}
+
+/* Header / Navigation */
+header {
+    background: linear-gradient(135deg, #76e0ee 0%, #d1bb3d 100%);
+    border-radius: 10x; 
+    text-align: center;
+    border: 2px solid #000000;
+    border-radius: 0 0 20px 20px;
+
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
     font-weight: bold;
+    background: rgba(226, 190, 29, 0.8);
+    padding: 10px 75px;
+    box-shadow: 0 2px 8px rgba(30, 45, 114, 0.15);
+    border: 2px solid #000000;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    display: inline-block;
+    border-radius: 50px;
+    margin: 20px;  
+
 }
 
-nav a:hover{
-    color: red;
+nav a:hover {
+    background: #dbae19;
+    color: #ddd8d8;
+    box-shadow: 0 4px 16px rgba(50, 50, 51, 0.25);
 }
 
-body{
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+/* Layout sections */
+main {
+    padding: 20px;
 }
 
-main{
-    padding: auto;
-}
-
-footer{
+footer {
+    background-color: #303030;
     text-align: center;
-    font-size: 12px;
-    color: gray;
-    margin-top: 20px;
 }
 
-main a{
-    color: orange;
+#titre_principal {
+    color: #ffffff;
 }
 
-li{
-    display: inline;
+section {
+    text-align: center;
+}
+
+#présente {
+    background: linear-gradient(90deg, #dd5c5c 30%, #be7e7e 70%);
+    color: #000000;
+    border-left: 5px solid #ff0000;
+    border-right: 5px solid #ff0000;
+    max-width: 1000px;
+    margin: 0 auto 50px ;
+    padding: 50px;
+    border-radius: 40px;
+    box-shadow: 0 40px 20px rgba(0,0,0,0.12);
+
+}
+#propos {
+    background: linear-gradient(90deg, #5cdd8c 30%, #7ebe9a 70%);
+    color: #000000;
+    border-left: 5px solid #008cff;
+    border-right: 5px solid #008cff;
+    max-width: 1000px;
+    margin: 0 auto 50px ;
+    padding: 50px;
+    border-radius: 40px;
+    box-shadow: 0 40px 20px rgba(0,0,0,0.12);
+
+}
+#Compétences {
+    background: linear-gradient(90deg, #e29945 30%, #dacf6d 70%);
+    color: #000000;
+    border-left: 5px solid #e6e957;
+    border-right: 5px solid #e6e957;
+    max-width: 1000px;
+    margin: 0 auto 50px ;
+    padding: 50px;
+    border-radius: 40px;
+    box-shadow: 0 40px 20px rgba(0,0,0,0.12);
+
+}
+#Contact {
+    background: linear-gradient(90deg, #9d5ee6 30%, #93b9ce 70%);
+    color: #000000;
+    border-left: 5px solid #d389c9;
+    border-right: 5px solid #d389c9;
+    max-width: 1000px;
+    margin: 0 auto 50px ;
+    padding: 50px;
+    border-radius: 40px;
+    box-shadow: 0 40px 20px rgba(0,0,0,0.12);
+}
+main > section:hover {
+    transform: scale(1.02);
 }
